@@ -110,11 +110,19 @@ void EntrarAlMenu(void) {
 
 			}
 		case 5:
-			respuesta = 'n';
+			printf("\tHA SELECCIONADO LA OPCION 5\n");
+
+			printf("\t¿Desea seguir utilizando la calculadora?s-n\n");
+			fflush(stdin);
+			scanf("%c", &respuesta);
+
+			if(respuesta == 'n'){
+				printf("\tGRACIAS POR UTILIZAR NUESTRA CALCULADORA");
+			}
 			break;
 
 		}
 
 	}
-	printf("\n\tESTA HA SIDO LA CALCULADORA DE BRAIAN AQUIJE!");
+
 }
